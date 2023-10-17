@@ -14,7 +14,7 @@
             android:id="@+id/action_mainPageFragment_to_createOrUpdatePageFragment"
             app:destination="@id/createOrUpdatePageFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@android:anim/fade_out"
             app:popEnterAnim="@android:anim/slide_in_left"
             app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
