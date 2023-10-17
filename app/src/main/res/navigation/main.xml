@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainPageFragment"
-        android:name="dev.asifddlks.bhaibhaiclinicApp.mainPage.MainPageFragment"
+        android:name="dev.asifddlks.bhaibhaiclinicApp.ui.mainPage.MainPageFragment"
         android:label="fragment_main_page"
         tools:layout="@layout/fragment_main_page">
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/createOrUpdatePageFragment"
-        android:name="dev.asifddlks.bhaibhaiclinicApp.createOrUpdatePage.CreateOrUpdatePageFragment"
+        android:name="dev.asifddlks.bhaibhaiclinicApp.ui.createOrUpdatePage.CreateOrUpdatePageFragment"
         android:label="fragment_create_or_update_page"
         tools:layout="@layout/fragment_create_or_update_page">
         <argument

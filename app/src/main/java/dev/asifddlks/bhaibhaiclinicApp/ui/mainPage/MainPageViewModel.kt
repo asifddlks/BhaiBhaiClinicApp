@@ -1,4 +1,4 @@
-package dev.asifddlks.bhaibhaiclinicApp.mainPage
+package dev.asifddlks.bhaibhaiclinicApp.ui.mainPage
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

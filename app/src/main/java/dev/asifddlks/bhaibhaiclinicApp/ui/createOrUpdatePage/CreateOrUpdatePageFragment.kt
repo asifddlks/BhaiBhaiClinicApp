@@ -1,4 +1,4 @@
-package dev.asifddlks.bhaibhaiclinicApp.createOrUpdatePage
+package dev.asifddlks.bhaibhaiclinicApp.ui.createOrUpdatePage
 
 import android.app.Dialog
 import android.os.Bundle

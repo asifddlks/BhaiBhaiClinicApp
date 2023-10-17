@@ -1,4 +1,4 @@
-package dev.asifddlks.bhaibhaiclinicApp.mainPage
+package dev.asifddlks.bhaibhaiclinicApp.ui.mainPage
 
 import android.app.Dialog
 import android.content.res.ColorStateList

@@ -1,4 +1,4 @@
-package dev.asifddlks.bhaibhaiclinicApp.createOrUpdatePage
+package dev.asifddlks.bhaibhaiclinicApp.ui.createOrUpdatePage
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
