@@ -6,16 +6,24 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.google.gson.Gson
 import dev.asifddlks.bhaibhaiclinicApp.databinding.FragmentCreateOrUpdatePageBinding
+import dev.asifddlks.bhaibhaiclinicApp.model.UserModel
+import dev.asifddlks.bhaibhaiclinicApp.utils.extensions.fromJson
 
 class CreateOrUpdatePageFragment : Fragment() {
 
     private val binding get() = _binding!!
     private var _binding: FragmentCreateOrUpdatePageBinding? = null
     private val viewModel: CreateOrUpdatePageViewModel by viewModels()
+
+    private var userItem: UserModel? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
+        arguments?.let { bundle ->
+            val jsonData = bundle.getString("userItem")
+            jsonData?.let { userItem = Gson().fromJson(jsonData) }
         }
     }
 
@@ -38,6 +46,9 @@ class CreateOrUpdatePageFragment : Fragment() {
     }
 
     private fun prepareViews() {
+        userItem?.let {
+            binding.text.text = it.name
+        }
 
     }
 

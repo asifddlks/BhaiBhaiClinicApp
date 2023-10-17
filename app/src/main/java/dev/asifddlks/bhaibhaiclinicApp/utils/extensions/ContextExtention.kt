@@ -1,4 +1,4 @@
-package dev.asifddlks.bhaibhaiclinicApp.extensions
+package dev.asifddlks.bhaibhaiclinicApp.utils.extensions
 
 import android.content.Context
 import android.content.Intent

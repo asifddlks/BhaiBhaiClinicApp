@@ -4,8 +4,8 @@ import android.app.Application
 import android.content.Context
 import android.os.Handler
 import android.os.Looper
-import dev.asifddlks.bhaibhaiclinicApp.extensions.showToast
 import dev.asifddlks.bhaibhaiclinicApp.networkCommunication.NetworkConnectivityObserver
+import dev.asifddlks.bhaibhaiclinicApp.utils.extensions.showToast
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collectLatest

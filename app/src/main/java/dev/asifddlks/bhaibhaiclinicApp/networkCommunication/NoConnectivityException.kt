@@ -1,12 +1,4 @@
-/*******************************************************************************
- * Copyright TVL. 2023. All rights reserved.
- * Last modified by asifAhmed on 6/23/23, 11:32 AM
- ******************************************************************************/
 
-/*******************************************************************************
- * Copyright TVL. 2023. All rights reserved.
- * Last modified by asifAhmed on 3/9/23, 3:46 PM
- */
 package dev.asifddlks.bhaibhaiclinicApp.networkCommunication
 
 import java.io.IOException

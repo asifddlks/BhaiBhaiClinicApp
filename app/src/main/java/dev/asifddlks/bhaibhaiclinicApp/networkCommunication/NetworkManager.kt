@@ -4,7 +4,7 @@ import android.annotation.SuppressLint
 import android.util.Log
 import com.google.gson.JsonElement
 import dev.asifddlks.bhaibhaiclinicApp.BhaiBhaiClinicApplication
-import dev.asifddlks.bhaibhaiclinicApp.constants.ApiConstants
+import dev.asifddlks.bhaibhaiclinicApp.utils.constants.ApiConstants
 import okhttp3.MediaType
 import okhttp3.MultipartBody
 import okhttp3.OkHttpClient
@@ -23,7 +23,7 @@ class NetworkManager {
     companion object {
 
         const val TEMP_AUTHORIZATION: String =
-            "Bearer 5f54c461fb7d6b345b3a770fa4586795ec1125bb80459ed9daba5f1c26cf26e0"
+            "5f54c461fb7d6b345b3a770fa4586795ec1125bb80459ed9daba5f1c26cf26e0"
 
         private val oktHttpClient: OkHttpClient.Builder = OkHttpClient.Builder()
             .addInterceptor(NetworkConnectionInterceptor(BhaiBhaiClinicApplication.applicationContext()))

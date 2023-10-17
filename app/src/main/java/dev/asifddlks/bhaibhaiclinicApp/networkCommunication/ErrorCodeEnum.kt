@@ -1,7 +1,3 @@
-/*******************************************************************************
- * Copyright TVL. 2023. All rights reserved.
- * Last modified by asifAhmed on 7/11/23, 3:49 PM
- ******************************************************************************/
 
 package dev.asifddlks.bhaibhaiclinicApp.networkCommunication
 
