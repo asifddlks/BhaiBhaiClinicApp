@@ -31,7 +31,12 @@ class NetworkManager {
         val retrofitClient: Api = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
             .baseUrl(ApiConstants.BASE_URL)
-            .client(oktHttpClient.build())
+            .client(OkHttpClient.Builder().addInterceptor { chain ->
+                val request = chain.request().newBuilder()
+                    .addHeader("Authorization", "Bearer $TEMP_AUTHORIZATION").build()
+                chain.proceed(request)
+            }.build())
+            //.client(oktHttpClient.build())
             .build().create(Api::class.java)
     }
 

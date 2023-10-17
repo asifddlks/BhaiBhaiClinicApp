@@ -16,6 +16,7 @@ import dev.asifddlks.bhaibhaiclinicApp.databinding.FragmentMainPageBinding
 import dev.asifddlks.bhaibhaiclinicApp.model.UserModel
 import dev.asifddlks.bhaibhaiclinicApp.utils.CustomDialog
 import dev.asifddlks.bhaibhaiclinicApp.utils.enums.UserStatusEnum
+import dev.asifddlks.bhaibhaiclinicApp.utils.extensions.showToast
 
 class MainPageFragment : Fragment() {
 
@@ -67,6 +68,11 @@ class MainPageFragment : Fragment() {
     }
 
     private fun prepareViews() {
+
+        viewModel.showToast.observe(viewLifecycleOwner) {
+            requireContext().showToast(it)
+        }
+
         viewModel.userStatus.observe(viewLifecycleOwner) { userStatus ->
             userStatus?.let { userStatus ->
                 binding.apply {

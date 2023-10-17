@@ -14,9 +14,9 @@
             android:id="@+id/action_mainPageFragment_to_createOrUpdatePageFragment"
             app:destination="@id/createOrUpdatePageFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/createOrUpdatePageFragment"
@@ -27,5 +27,6 @@
             android:name="userItem"
             android:defaultValue=""
             app:argType="string" />
+
     </fragment>
 </navigation>

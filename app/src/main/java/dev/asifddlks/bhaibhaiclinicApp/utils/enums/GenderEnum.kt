@@ -5,7 +5,7 @@ package dev.asifddlks.bhaibhaiclinicApp.utils.enums
  */
 
 enum class GenderEnum(val value: String) {
-    NONE("-"),
     MALE("Male"),
-    FEMALE("Female")
+    FEMALE("Female"),
+    OTHER("Other")
 }

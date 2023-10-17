@@ -12,7 +12,7 @@ import dev.asifddlks.bhaibhaiclinicApp.utils.enums.UserStatusEnum
 class MainPageViewModel : ViewModel() {
 
     var isLoading: MutableLiveData<Boolean> = MutableLiveData(false)
-    private var showToast: MutableLiveData<String> = MutableLiveData()
+    var showToast: MutableLiveData<String> = MutableLiveData()
     var userStatus: MutableLiveData<UserStatusEnum> = MutableLiveData(UserStatusEnum.ACTIVE)
     var userList: MutableLiveData<MutableList<UserModel>> = MutableLiveData(mutableListOf())
     fun loadUsers() {
